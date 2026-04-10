@@ -8,7 +8,7 @@ from sklearn.linear_model import LogisticRegression
 # Generate data
 X, y = make_classification(n_samples=1000, n_features=10, random_state=42)
 
-# ❌ WRONG: Scaling BEFORE splitting
+# WRONG: Scaling done  BEFORE splitting
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
